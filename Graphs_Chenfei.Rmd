@@ -1,0 +1,104 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+data = cbind(pitch_record, clean_pitches)
+```
+
+```{r}
+data = read.csv("./data.csv")
+```
+
+```{r}
+head(data)
+```
+
+```{r}
+data_SS = select(data, contains("SS_"))
+```
+
+```{r}
+SS_mean = rowMeans(data_SS[,1:40], na.rm = T)
+```
+
+```{r}
+data_z0 = select(data, contains("z0_"))
+```
+
+```{r}
+z0_mean = rowMeans(data_z0[,1:40], na.rm = T)
+```
+
+
+```{r}
+data_clean = cbind(data, SS_mean, z0_mean)
+```
+
+```{r}
+data_clean = data_clean %>% filter(!is.nan(SS_mean)) %>% filter(!is.nan(z0_mean)) 
+```
+
+
+```{r}
+data_needs = data_clean %>% select(`SS_mean`, `pitcherTeam`, `heightInches`, `weightLbs`, `RHP`, `z0_mean`)
+```
+
+
+```{r}
+data_needs2 = data_needs %>%
+    group_by(`pitcherTeam`) %>% 
+    summarise(across(, mean))
+```
+
+```{r}
+ggplot(aes(x = heightInches, y = SS_mean), data = data_needs2)+ geom_point() + xlab("Average Height Per Team") + ylab("Average Pitch Start Speed Per Team")
+```
+```{r}
+ggplot(aes(x = factor(heightInches), y = SS_mean), data = data_needs)+ geom_boxplot() + xlab("Height of Player") + ylab("Average Pitch Start Speed")
+```
+```{r}
+ggplot(aes(x = heightInches, y = z0_mean), data = data_needs2)+ geom_point() + xlab("Average Height Per Team") + ylab("Average Pitch Start Height Per Team")
+```
+
+```{r}
+ggplot(aes(x = factor(heightInches), y = z0_mean), data = data_needs)+ geom_boxplot() + xlab("Height of Player") + ylab("Average Pitch Start Height")
+```
+
+
+
+```{r}
+l_ss_person = lm(SS_mean ~ heightInches+ weightLbs + RHP, data = data_needs)
+anova(l_ss_person)
+```
+```{r}
+l_ss_group = lm(SS_mean ~ heightInches+ weightLbs + RHP, data = data_needs2)
+anova(l_ss_group)
+```
+
+
+```{r}
+l_z_person = lm(z0_mean ~ heightInches+ weightLbs + RHP, data = data_needs)
+anova(l_z_person)
+```
+
+```{r}
+l_z_group = lm(z0_mean ~ heightInches+ weightLbs + RHP, data = data_needs2)
+anova(l_z_group)
+```
+```{r}
+data_needs2
+```
+
+
+
