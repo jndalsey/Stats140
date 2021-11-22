@@ -1,0 +1,124 @@
+##### Break Down Data by Team
+
+# run cleaning file first
+
+# pitch_full[1, paste0("SS_", 1:40)]
+
+clean_pitches_count <- clean_pitches %>% 
+  mutate(CH = sapply(str_match_all(Ptype_seq, "CH"), nrow),
+         FT = sapply(str_match_all(Ptype_seq, "FT"), nrow),
+         CU = sapply(str_match_all(Ptype_seq, "CU"), nrow),
+         FF = sapply(str_match_all(Ptype_seq, "FF"), nrow),
+         FA = sapply(str_match_all(Ptype_seq, "FA"), nrow),
+         FC = sapply(str_match_all(Ptype_seq, "FC"), nrow),
+         FS = sapply(str_match_all(Ptype_seq, "FS"), nrow),
+         IN = sapply(str_match_all(Ptype_seq, "IN"), nrow),
+         PO = sapply(str_match_all(Ptype_seq, "PO"), nrow),
+         SI = sapply(str_match_all(Ptype_seq, "SI"), nrow),
+         SL = sapply(str_match_all(Ptype_seq, "SL"), nrow),
+         Ptype_seq = NULL)
+
+##### Break down by team and pitch
+
+# by player
+
+# pitches_named <- clean_pitches_count %>% 
+#   select(name, pitcherTeam, GamesPlayed, Wins, CH:SL) %>% 
+#   pivot_longer(CH:SL,
+#                names_to = "PitchType",
+#                values_to = "PitchCount") %>% 
+#   group_by(name, pitcherTeam, PitchType) %>% 
+#   summarize(PitchCount = sum(PitchCount),
+#             WinPct = mean(Wins) / mean(GamesPlayed))
+
+# by team
+
+pitches_team <- clean_pitches_count %>% 
+  select(pitcherTeam, GamesPlayed, Wins, CH:SL) %>% 
+  pivot_longer(CH:SL,
+               names_to = "PitchType",
+               values_to = "PitchCount") %>% 
+  group_by(pitcherTeam, PitchType) %>% 
+  summarise(PitchCount = sum(PitchCount),
+            WinPct = mean(Wins) / mean(GamesPlayed))
+
+pitches_per_team <- pitches_team %>% 
+  group_by(pitcherTeam) %>% 
+  summarise(TotalPitches = sum(PitchCount))
+
+pitches_team <- left_join(pitches_team, pitches_per_team, by = "pitcherTeam") %>% 
+  mutate(PitchPct = round(PitchCount / TotalPitches, 4))
+
+# Barplot
+
+ggplot(pitches_team, aes(x = PitchType, y = PitchCount, fill = pitcherTeam)) +
+  geom_bar(position = "stack", stat = "identity") +
+  labs(y = "Pitch Count", x = "Pitch Type",
+       title = "Pitch Counts by Type and Team")
+
+# Plot
+
+ggplot(pitches_team, 
+       aes(PitchType, pitcherTeam, fill = PitchPct)) + 
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "darkgreen") +
+  labs(y = "Team", x = "Pitch Type",
+       title = "Heatmap of Pitch Type by Team")
+
+# remove the lowest and highest
+
+ggplot(pitches_team %>% filter(!PitchType %in% c("FF", "FA", "IN", "PO")),
+       aes(PitchType, pitcherTeam, fill = PitchPct)) + 
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "darkgreen") +
+  labs(y = "Team", x = "Pitch Type",
+       title = "Heatmap of Pitch Type by Team (Reduced)")
+
+##### Now separate by year
+
+pitches_team_year <- clean_pitches_count %>%
+  select(pitcherTeam, Year, GamesPlayed, Wins, CH:SL) %>%
+  pivot_longer(CH:SL,
+               names_to = "PitchType",
+               values_to = "PitchCount") %>%
+  group_by(pitcherTeam, Year, PitchType) %>%
+  summarise(PitchCount = sum(PitchCount),
+            WinPct = mean(Wins) / mean(GamesPlayed))
+
+pitches_per_team_year <- pitches_team %>%
+  group_by(pitcherTeam) %>%
+  summarise(TotalPitches = sum(PitchCount))
+
+pitches_team_year <- left_join(pitches_team_year, pitches_per_team_year, by = "pitcherTeam") %>%
+  mutate(PitchPct = round(PitchCount / TotalPitches, 4))
+
+pitches_team_year_wide <- pitches_team_year %>% 
+  select(pitcherTeam, Year, PitchType, WinPct, PitchPct) %>% 
+  pivot_wider(names_from = PitchType, values_from = PitchPct)
+
+##### test for significance in predicting wins
+
+pitch_model <- lm(WinPct ~ CH + CU + FA + FC + FF + FS + FT + IN + PO + SI + SL,
+                  data = pitches_team_year_wide)
+summary(pitch_model)
+
+pitch_model_min <- lm(WinPct ~ CH + CU + FC + FF + FS + FT + SI + SL,
+                  data = pitches_team_year_wide)
+summary(pitch_model_min)
+
+par(mfrow = c(2, 2))
+plot(pitch_model_min)
+
+plot(pitches_team_year_wide$FC, pitches_team_year_wide$WinPct)
+
+summary(aov(WinPct ~ CH + CU + FC + FF + FS + FT + SI + SL,
+            data = pitches_team_year_wide))
+
+# ##### test for significance in which pitch is chosen
+# 
+# summary(aov(PitchPct ~ PitchType,
+#             data = pitches_team_year))
+# 
+# chisq.test(table(pitches_team_year$PitchType, pitches_team_year$PitchPct))
+# 
+# hist(pitches_team_year$PitchPct)
