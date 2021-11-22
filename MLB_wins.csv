@@ -1,0 +1,331 @@
+"Year","GamesPlayed","Team","Wins"
+2020,60,"Arizona Diamondbacks",25
+2020,60,"Atlanta Braves",35
+2020,60,"Baltimore Orioles",25
+2020,60,"Boston Red Sox",24
+2020,60,"Chicago Cubs",34
+2020,60,"Chicago White Sox",35
+2020,60,"Cincinnati Reds",31
+2020,60,"Cleveland Indians",35
+2020,60,"Colorado Rockies",26
+2020,60,"Detroit Tigers",23
+2020,60,"Houston Astros",29
+2020,60,"Kansas City Royals",26
+2020,60,"Los Angeles Angels",26
+2020,60,"Los Angeles Dodgers",43
+2020,60,"Miami Marlins",31
+2020,60,"Milwaukee Brewers",29
+2020,60,"Minnesota Twins",36
+2020,60,"New York Mets",26
+2020,60,"New York Yankees",33
+2020,60,"Oakland Athletics",36
+2020,60,"Philadelphia Phillies",28
+2020,60,"Pittsburgh Pirates",19
+2020,60,"San Diego Padres",37
+2020,60,"San Francisco Giants",29
+2020,60,"Seattle Mariners",27
+2020,60,"St. Louis Cardinals",30
+2020,60,"Tampa Bay Rays",40
+2020,60,"Texas Rangers",22
+2020,60,"Toronto Blue Jays",32
+2020,60,"Washington Nationals",26
+2019,162,"Arizona Diamondbacks",85
+2019,162,"Atlanta Braves",97
+2019,162,"Baltimore Orioles",54
+2019,162,"Boston Red Sox",84
+2019,162,"Chicago Cubs",84
+2019,162,"Chicago White Sox",72
+2019,162,"Cincinnati Reds",75
+2019,162,"Cleveland Indians",93
+2019,162,"Colorado Rockies",71
+2019,162,"Detroit Tigers",47
+2019,162,"Houston Astros",107
+2019,162,"Kansas City Royals",59
+2019,162,"Los Angeles Angels",72
+2019,162,"Los Angeles Dodgers",106
+2019,162,"Miami Marlins",57
+2019,162,"Milwaukee Brewers",89
+2019,162,"Minnesota Twins",101
+2019,162,"New York Mets",86
+2019,162,"New York Yankees",103
+2019,162,"Oakland Athletics",97
+2019,162,"Philadelphia Phillies",81
+2019,162,"Pittsburgh Pirates",69
+2019,162,"San Diego Padres",70
+2019,162,"San Francisco Giants",77
+2019,162,"Seattle Mariners",68
+2019,162,"St. Louis Cardinals",91
+2019,162,"Tampa Bay Rays",96
+2019,162,"Texas Rangers",78
+2019,162,"Toronto Blue Jays",67
+2019,162,"Washington Nationals",93
+2018,163,"Arizona Diamondbacks",82
+2018,163,"Atlanta Braves",90
+2018,163,"Baltimore Orioles",47
+2018,163,"Boston Red Sox",108
+2018,163,"Chicago Cubs",95
+2018,163,"Chicago White Sox",62
+2018,163,"Cincinnati Reds",67
+2018,163,"Cleveland Indians",91
+2018,163,"Colorado Rockies",91
+2018,163,"Detroit Tigers",64
+2018,163,"Houston Astros",103
+2018,163,"Kansas City Royals",58
+2018,163,"Los Angeles Angels",80
+2018,163,"Los Angeles Dodgers",92
+2018,163,"Miami Marlins",63
+2018,163,"Milwaukee Brewers",96
+2018,163,"Minnesota Twins",78
+2018,163,"New York Mets",77
+2018,163,"New York Yankees",100
+2018,163,"Oakland Athletics",97
+2018,163,"Philadelphia Phillies",80
+2018,163,"Pittsburgh Pirates",82
+2018,163,"San Diego Padres",66
+2018,163,"San Francisco Giants",73
+2018,163,"Seattle Mariners",89
+2018,163,"St. Louis Cardinals",88
+2018,163,"Tampa Bay Rays",90
+2018,163,"Texas Rangers",67
+2018,163,"Toronto Blue Jays",73
+2018,163,"Washington Nationals",82
+2017,162,"Arizona Diamondbacks",93
+2017,162,"Atlanta Braves",72
+2017,162,"Baltimore Orioles",75
+2017,162,"Boston Red Sox",93
+2017,162,"Chicago Cubs",92
+2017,162,"Chicago White Sox",67
+2017,162,"Cincinnati Reds",68
+2017,162,"Cleveland Indians",102
+2017,162,"Colorado Rockies",87
+2017,162,"Detroit Tigers",64
+2017,162,"Houston Astros",101
+2017,162,"Kansas City Royals",80
+2017,162,"Los Angeles Angels",80
+2017,162,"Los Angeles Dodgers",104
+2017,162,"Miami Marlins",77
+2017,162,"Milwaukee Brewers",86
+2017,162,"Minnesota Twins",85
+2017,162,"New York Mets",70
+2017,162,"New York Yankees",91
+2017,162,"Oakland Athletics",75
+2017,162,"Philadelphia Phillies",66
+2017,162,"Pittsburgh Pirates",75
+2017,162,"San Diego Padres",71
+2017,162,"San Francisco Giants",64
+2017,162,"Seattle Mariners",78
+2017,162,"St. Louis Cardinals",83
+2017,162,"Tampa Bay Rays",80
+2017,162,"Texas Rangers",78
+2017,162,"Toronto Blue Jays",76
+2017,162,"Washington Nationals",97
+2016,162,"Arizona Diamondbacks",69
+2016,162,"Atlanta Braves",68
+2016,162,"Baltimore Orioles",89
+2016,162,"Boston Red Sox",93
+2016,162,"Chicago Cubs",103
+2016,162,"Chicago White Sox",78
+2016,162,"Cincinnati Reds",68
+2016,162,"Cleveland Indians",94
+2016,162,"Colorado Rockies",75
+2016,162,"Detroit Tigers",86
+2016,162,"Houston Astros",84
+2016,162,"Kansas City Royals",81
+2016,162,"Los Angeles Angels",74
+2016,162,"Los Angeles Dodgers",91
+2016,162,"Miami Marlins",79
+2016,162,"Milwaukee Brewers",73
+2016,162,"Minnesota Twins",59
+2016,162,"New York Mets",87
+2016,162,"New York Yankees",84
+2016,162,"Oakland Athletics",69
+2016,162,"Philadelphia Phillies",71
+2016,162,"Pittsburgh Pirates",78
+2016,162,"San Diego Padres",68
+2016,162,"San Francisco Giants",87
+2016,162,"Seattle Mariners",86
+2016,162,"St. Louis Cardinals",86
+2016,162,"Tampa Bay Rays",68
+2016,162,"Texas Rangers",95
+2016,162,"Toronto Blue Jays",89
+2016,162,"Washington Nationals",95
+2015,162,"Arizona Diamondbacks",79
+2015,162,"Atlanta Braves",67
+2015,162,"Baltimore Orioles",81
+2015,162,"Boston Red Sox",78
+2015,162,"Chicago Cubs",97
+2015,162,"Chicago White Sox",76
+2015,162,"Cincinnati Reds",64
+2015,162,"Cleveland Indians",81
+2015,162,"Colorado Rockies",68
+2015,162,"Detroit Tigers",74
+2015,162,"Houston Astros",86
+2015,162,"Kansas City Royals",95
+2015,162,"Los Angeles Angels",85
+2015,162,"Los Angeles Dodgers",92
+2015,162,"Miami Marlins",71
+2015,162,"Milwaukee Brewers",68
+2015,162,"Minnesota Twins",83
+2015,162,"New York Mets",90
+2015,162,"New York Yankees",87
+2015,162,"Oakland Athletics",68
+2015,162,"Philadelphia Phillies",63
+2015,162,"Pittsburgh Pirates",98
+2015,162,"San Diego Padres",74
+2015,162,"San Francisco Giants",84
+2015,162,"Seattle Mariners",76
+2015,162,"St. Louis Cardinals",100
+2015,162,"Tampa Bay Rays",80
+2015,162,"Texas Rangers",88
+2015,162,"Toronto Blue Jays",93
+2015,162,"Washington Nationals",83
+2014,162,"Arizona Diamondbacks",64
+2014,162,"Atlanta Braves",79
+2014,162,"Baltimore Orioles",96
+2014,162,"Boston Red Sox",71
+2014,162,"Chicago Cubs",73
+2014,162,"Chicago White Sox",73
+2014,162,"Cincinnati Reds",76
+2014,162,"Cleveland Indians",85
+2014,162,"Colorado Rockies",66
+2014,162,"Detroit Tigers",90
+2014,162,"Houston Astros",70
+2014,162,"Kansas City Royals",89
+2014,162,"Los Angeles Angels",98
+2014,162,"Los Angeles Dodgers",94
+2014,162,"Miami Marlins",77
+2014,162,"Milwaukee Brewers",82
+2014,162,"Minnesota Twins",70
+2014,162,"New York Mets",79
+2014,162,"New York Yankees",84
+2014,162,"Oakland Athletics",88
+2014,162,"Philadelphia Phillies",73
+2014,162,"Pittsburgh Pirates",88
+2014,162,"San Diego Padres",77
+2014,162,"San Francisco Giants",88
+2014,162,"Seattle Mariners",87
+2014,162,"St. Louis Cardinals",90
+2014,162,"Tampa Bay Rays",77
+2014,162,"Texas Rangers",67
+2014,162,"Toronto Blue Jays",83
+2014,162,"Washington Nationals",96
+2013,163,"Arizona Diamondbacks",81
+2013,163,"Atlanta Braves",96
+2013,163,"Baltimore Orioles",85
+2013,163,"Boston Red Sox",97
+2013,163,"Chicago Cubs",66
+2013,163,"Chicago White Sox",63
+2013,163,"Cincinnati Reds",90
+2013,163,"Cleveland Indians",92
+2013,163,"Colorado Rockies",74
+2013,163,"Detroit Tigers",93
+2013,163,"Houston Astros",51
+2013,163,"Kansas City Royals",86
+2013,163,"Los Angeles Angels",78
+2013,163,"Los Angeles Dodgers",92
+2013,163,"Miami Marlins",62
+2013,163,"Milwaukee Brewers",74
+2013,163,"Minnesota Twins",66
+2013,163,"New York Mets",74
+2013,163,"New York Yankees",85
+2013,163,"Oakland Athletics",96
+2013,163,"Philadelphia Phillies",73
+2013,163,"Pittsburgh Pirates",94
+2013,163,"San Diego Padres",76
+2013,163,"San Francisco Giants",76
+2013,163,"Seattle Mariners",71
+2013,163,"St. Louis Cardinals",97
+2013,163,"Tampa Bay Rays",92
+2013,163,"Texas Rangers",91
+2013,163,"Toronto Blue Jays",74
+2013,163,"Washington Nationals",86
+2012,162,"Arizona Diamondbacks",81
+2012,162,"Atlanta Braves",94
+2012,162,"Baltimore Orioles",93
+2012,162,"Boston Red Sox",69
+2012,162,"Chicago Cubs",61
+2012,162,"Chicago White Sox",85
+2012,162,"Cincinnati Reds",97
+2012,162,"Cleveland Indians",68
+2012,162,"Colorado Rockies",64
+2012,162,"Detroit Tigers",88
+2012,162,"Houston Astros",55
+2012,162,"Kansas City Royals",72
+2012,162,"Los Angeles Angels",89
+2012,162,"Los Angeles Dodgers",86
+2012,162,"Miami Marlins",69
+2012,162,"Milwaukee Brewers",83
+2012,162,"Minnesota Twins",66
+2012,162,"New York Mets",74
+2012,162,"New York Yankees",95
+2012,162,"Oakland Athletics",94
+2012,162,"Philadelphia Phillies",81
+2012,162,"Pittsburgh Pirates",79
+2012,162,"San Diego Padres",76
+2012,162,"San Francisco Giants",94
+2012,162,"Seattle Mariners",75
+2012,162,"St. Louis Cardinals",88
+2012,162,"Tampa Bay Rays",90
+2012,162,"Texas Rangers",93
+2012,162,"Toronto Blue Jays",73
+2012,162,"Washington Nationals",98
+2011,162,"Arizona Diamondbacks",94
+2011,162,"Atlanta Braves",89
+2011,162,"Baltimore Orioles",69
+2011,162,"Boston Red Sox",90
+2011,162,"Chicago Cubs",71
+2011,162,"Chicago White Sox",79
+2011,162,"Cincinnati Reds",79
+2011,162,"Cleveland Indians",80
+2011,162,"Colorado Rockies",73
+2011,162,"Detroit Tigers",95
+2011,162,"Houston Astros",56
+2011,162,"Kansas City Royals",71
+2011,162,"Los Angeles Angels",86
+2011,162,"Los Angeles Dodgers",82
+2011,162,"Miami Marlins",72
+2011,162,"Milwaukee Brewers",96
+2011,162,"Minnesota Twins",63
+2011,162,"New York Mets",77
+2011,162,"New York Yankees",97
+2011,162,"Oakland Athletics",74
+2011,162,"Philadelphia Phillies",102
+2011,162,"Pittsburgh Pirates",72
+2011,162,"San Diego Padres",71
+2011,162,"San Francisco Giants",86
+2011,162,"Seattle Mariners",67
+2011,162,"St. Louis Cardinals",90
+2011,162,"Tampa Bay Rays",91
+2011,162,"Texas Rangers",96
+2011,162,"Toronto Blue Jays",81
+2011,162,"Washington Nationals",80
+2010,162,"Arizona Diamondbacks",65
+2010,162,"Atlanta Braves",91
+2010,162,"Baltimore Orioles",66
+2010,162,"Boston Red Sox",89
+2010,162,"Chicago Cubs",75
+2010,162,"Chicago White Sox",88
+2010,162,"Cincinnati Reds",91
+2010,162,"Cleveland Indians",69
+2010,162,"Colorado Rockies",83
+2010,162,"Detroit Tigers",81
+2010,162,"Houston Astros",76
+2010,162,"Kansas City Royals",67
+2010,162,"Los Angeles Angels",80
+2010,162,"Los Angeles Dodgers",80
+2010,162,"Miami Marlins",80
+2010,162,"Milwaukee Brewers",77
+2010,162,"Minnesota Twins",94
+2010,162,"New York Mets",79
+2010,162,"New York Yankees",95
+2010,162,"Oakland Athletics",81
+2010,162,"Philadelphia Phillies",97
+2010,162,"Pittsburgh Pirates",57
+2010,162,"San Diego Padres",90
+2010,162,"San Francisco Giants",92
+2010,162,"Seattle Mariners",61
+2010,162,"St. Louis Cardinals",86
+2010,162,"Tampa Bay Rays",96
+2010,162,"Texas Rangers",90
+2010,162,"Toronto Blue Jays",85
+2010,162,"Washington Nationals",69
